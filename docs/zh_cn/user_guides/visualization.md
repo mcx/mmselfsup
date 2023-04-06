@@ -49,7 +49,7 @@ def after_train_iter(...):
 
 (2) 浏览数据集
 
-[`add_datasample()`](https://github.com/open-mmlab/mmselfsup/blob/dev-1.x/mmselfsup/visualization/selfsup_visualizer.py#L151) 函数位于 [`SelfSupVisualizer`](mmselfsup.visualization.SelfSupVisualizer), 常用于在 [browse_dataset.py](https://github.com/open-mmlab/mmselfsup/blob/dev-1.x/tools/analysis_tools/browse_dataset.py) 中浏览数据集。更多细节可以参考 [数据集可视化](#数据集可视化)。
+[`add_datasample()`](https://github.com/open-mmlab/mmselfsup/blob/main/mmselfsup/visualization/selfsup_visualizer.py#L151) 函数位于 [`SelfSupVisualizer`](mmselfsup.visualization.SelfSupVisualizer), 常用于在 [browse_dataset.py](https://github.com/open-mmlab/mmselfsup/blob/main/tools/analysis_tools/browse_dataset.py) 中浏览数据集。更多细节可以参考 [数据集可视化](#数据集可视化)。
 
 ## 用不同的存储后端
 
@@ -129,7 +129,7 @@ python tools/analysis_tools/visualize_tsne.py ${CONFIG_FILE} --checkpoint ${CKPT
 - `CONFIG_FILE`: 位于 `configs/tsne/` 中的 t-SNE 的配置文件。
 - `CKPT_PATH`: 模型检查点的目录或链接。
 - `WORK_DIR`: 拿来存可视化结果的目录。
-- `[optional arguments]`: 可选项，可以参考 [visualize_tsne.py](https://github.com/open-mmlab/mmselfsup/blob/dev-1.x/tools/analysis_tools/visualize_tsne.py)
+- `[optional arguments]`: 可选项，可以参考 [visualize_tsne.py](https://github.com/open-mmlab/mmselfsup/blob/main/tools/analysis_tools/visualize_tsne.py)
 
 一个命令示例如下：
 
@@ -145,7 +145,7 @@ python ./tools/analysis_tools/visualize_tsne.py \
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/36138628/207305086-91df298c-0eb7-4254-9c5b-ba711644501b.png" width="250" />
-<img src="https://user-images.githubusercontent.com/36138628/207305333-59af4747-1e9c-4f85-a57d-c7e5d132a6e5.png" width="250" />
+<img src="https://user-images.githubusercontent.com/36138628/223383663-a021bb5f-1ef5-404d-87aa-c353edd4e1e1.png" width="250" />
 </div>
 
 ## 可视化低级特征重建
@@ -171,7 +171,7 @@ python tools/analysis_tools/visualize_reconstruction.py ${CONFIG_FILE} \
 - `CKPT_PATH`: 模型检查点的路径。
 - `IMAGE_PATH`: 输入图像的路径。
 - `OUTPUT_PATH`: 输出图像的路径，包含４个子图。
-- `[optional arguments]`: for optional arguments, 您可以参考 [visualize_reconstruction.py](https://github.com/open-mmlab/mmselfsup/blob/dev-1.x/tools/analysis_tools/visualize_reconstruction.py) 了解可选参数。
+- `[optional arguments]`: for optional arguments, 您可以参考 [visualize_reconstruction.py](https://github.com/open-mmlab/mmselfsup/blob/main/tools/analysis_tools/visualize_reconstruction.py) 了解可选参数。
 
 例子如下:
 
